@@ -186,7 +186,7 @@ p:last-child {}
             padding: 4px;
             margin: 10px;
             img {
-                border: 2px solid #e8e6e5;
+                border: 10px solid #ffffff;
             }
         }
     }
@@ -196,24 +196,74 @@ p:last-child {}
     display: block;
     text-align: center;
     .bantop {
-        height: 574px;
+        height: $banheight;
         overflow: hidden;
         display: block;
         img {
             float: left;
             width: 66.6%;
+            height: $banheight;
         }
-        div {
-            float: left;
-            background-color: #fff;
-            height: 100%;
-            width: 33.3%;
+        #NewWorld {
+            width: 474px;
+            margin: auto;
+            height: $banheight;
+            overflow: hidden;
+            position: relative;
+            ul {
+                height: $banheight;
+                width: 1422px;
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                li {
+                    margin-top: 100px;
+                    height: $banheight;
+                    width: 474px;
+                    display: inline-block;
+                    position: absolute;
+                    h4 {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        width: 80%;
+                        margin: 0px auto;
+                        margin-bottom: 20px;
+                        line-height: 2.5;
+                    }
+                    button {
+                        padding: 10px 30px;
+                        background: none;
+                        color: $mainRed;
+                        border: 1px solid;
+                    }
+                }
+            }
+            .btn {
+                position: absolute;
+                text-align: center;
+                top: 70%;
+                width: 200px;
+                left: 50%;
+                margin-left: -100px;
+            }
+            .btn span {
+                opacity: 0.7;
+                background: #FFFFFF;
+                border: 2px solid #929292;
+                height: 6px;
+                border-radius: 10px;
+                cursor: pointer;
+                display: inline-block;
+                padding: 4px 7px;
+                margin: 0 10px;
+            }
         }
     }
     .bandown {
-        overflow: hidden;
         display: block;
-        height: 574px;
+        height: $banheight;
         p {
             font-size: 20px;
             margin-top: 40%;
@@ -228,9 +278,9 @@ p:last-child {}
         }
         button {
             padding: 10px 30px;
-            background:none;
+            background: none;
             color: $mainRed;
-            border:1px solid;
+            border: 1px solid;
         }
         .down-1 {
             background-color: $mainRed;
@@ -238,13 +288,13 @@ p:last-child {}
             float: left;
             width: 33.3%;
             p {
-                color:#fff;
+                color: #fff;
             }
             p:after {
                 border-bottom-color: #fff;
             }
-            button{
-                border-color:#ed8173;
+            button {
+                border-color: #ed8173;
                 color: #fff;
             }
         }
@@ -253,94 +303,149 @@ p:last-child {}
             height: 100%;
             float: left;
             width: 33.3%;
-            p {
-            }
+            p {}
             p:after {
                 border-bottom-color: #abaaaa;
             }
-            button{
-                border-color:#ed8173;
+            button {
+                border-color: #ed8173;
             }
         }
-        img {
-            float: left;
+        .down-3 {
             width: 33.3%;
+            height: 574px;
+            background: url('../img/wait.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            float: left;
+        }
+        .tri {
+            content: "";
+            position: relative;
+            top: 50%;
+            border: 20px solid transparent;
+            border-left-color: #fff;
         }
     }
 }
 
-.join{
+.join {
     text-align: center;
     margin: 0 auto;
     overflow: hidden;
     width: 1000px;
-    .clause{
+    margin-top: 70px;
+    h4 {}
+    .subtitle {
+        margin: 30px auto 70px auto;
+        width: 560px;
+    }
+    .clause {
         height: 500px;
         width: 300px;
         float: left;
-        li{
+        li {
             overflow: hidden;
-            text-align:left;
-            span{
-                text-align:right;
-                float:right;
+            text-align: left;
+            h5 {
+                margin: 10px 0;
+            }
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            span {
+                text-align: right;
+                float: right;
             }
         }
     }
-    form{
+    form {
         float: right;
         height: 290px;
         width: 640px;
-        input[type="text"]{
+        input[type="text"] {
             width: 300px;
             height: 40px;
-            margin:10px 1px;
-            border:none;
-            padding:4px 6px;
+            margin: 10px 1px;
+            border: none;
+            padding: 4px 6px;
         }
-        input[type="text"]:active,input[type="text"]:focus,textarea:active,textarea:focus{
-            background-color:#ededee;
+        input[type="text"]:active,
+        input[type="text"]:focus,
+        textarea:active,
+        textarea:focus {
+            background-color: #ededee;
         }
-        textarea{
+        textarea {
             width: 630px;
             height: 120px;
-            border:none;
-            padding:5px;
+            border: none;
+            padding: 5px;
         }
-        input[type="submit"]{
+        input[type="submit"] {
             width: 630px;
             height: 40px;
-            background:none;
-            border:none;
+            background: none;
+            border: none;
             cursor: pointer;
         }
     }
 }
 
-.contact{
+.contact {
     margin: 0 auto;
     display: block;
     text-align: center;
     background: #32353e;
-    height:300px;
-    padding:60px;
-    h1,p{
-        color:#fff;
+    height: 300px;
+    padding: 60px;
+    h1,
+    p {
+        color: #fff;
+    }
+    h1 {
+        margin-top: 20px;
+        font-size: 23px;
+    }
+    p {
+        margin: 10px auto 20px auto;
+        width: 750px;
+    }
+    input {
+        padding: 10px 20px;
+        width: 400px;
+    }
+    button {
+        padding: 12px 20px;
+        margin-left: -8px;
+        background: #686166;
+        color: #fff;
+        letter-spacing: 10px;
+        text-indent: 10px;
+    }
+    img{
+        margin:20px 10px;
+        cursor: pointer;
     }
 }
 
-.foot{
-    background-color:#2f3038;
+.foot {
+    background-color: #2f3038;
     overflow: hidden;
-    width:100%;
-    p{
-        color:#fff;
+    width: 100%;
+    height: 50px;
+    p {
+        color: #fff;
+        line-height: 50px;
     }
-    .tip{
+    .tip {
         float: left;
+        margin-left: 100px;
     }
-    .back{
+    .back {
         float: right;
+        margin-right: 100px;
     }
 }
-

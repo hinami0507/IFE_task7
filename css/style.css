@@ -205,7 +205,7 @@ button {
       padding: 4px;
       margin: 10px; }
       .galleryWapr .gallery div img {
-        border: 2px solid #e8e6e5; }
+        border: 10px solid #ffffff; }
 
 .ban {
   display: block;
@@ -216,14 +216,57 @@ button {
     display: block; }
     .ban .bantop img {
       float: left;
-      width: 66.6%; }
-    .ban .bantop div {
-      float: left;
-      background-color: #fff;
-      height: 100%;
-      width: 33.3%; }
+      width: 66.6%;
+      height: 574px; }
+    .ban .bantop #NewWorld {
+      width: 474px;
+      margin: auto;
+      height: 574px;
+      overflow: hidden;
+      position: relative; }
+      .ban .bantop #NewWorld ul {
+        height: 574px;
+        width: 1422px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute; }
+        .ban .bantop #NewWorld ul li {
+          margin-top: 100px;
+          height: 574px;
+          width: 474px;
+          display: inline-block;
+          position: absolute; }
+          .ban .bantop #NewWorld ul li h4 {
+            font-size: 20px;
+            margin-bottom: 20px; }
+          .ban .bantop #NewWorld ul li p {
+            width: 80%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            line-height: 2.5; }
+          .ban .bantop #NewWorld ul li button {
+            padding: 10px 30px;
+            background: none;
+            color: #e74f4d;
+            border: 1px solid; }
+      .ban .bantop #NewWorld .btn {
+        position: absolute;
+        text-align: center;
+        top: 70%;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px; }
+      .ban .bantop #NewWorld .btn span {
+        opacity: 0.7;
+        background: #FFFFFF;
+        border: 2px solid #929292;
+        height: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 4px 7px;
+        margin: 0 10px; }
   .ban .bandown {
-    overflow: hidden;
     display: block;
     height: 574px; }
     .ban .bandown p {
@@ -262,15 +305,29 @@ button {
         border-bottom-color: #abaaaa; }
       .ban .bandown .down-2 button {
         border-color: #ed8173; }
-    .ban .bandown img {
-      float: left;
-      width: 33.3%; }
+    .ban .bandown .down-3 {
+      width: 33.3%;
+      height: 574px;
+      background: url("../img/wait.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      float: left; }
+    .ban .bandown .tri {
+      content: "";
+      position: relative;
+      top: 50%;
+      border: 20px solid transparent;
+      border-left-color: #fff; }
 
 .join {
   text-align: center;
   margin: 0 auto;
   overflow: hidden;
-  width: 1000px; }
+  width: 1000px;
+  margin-top: 70px; }
+  .join .subtitle {
+    margin: 30px auto 70px auto;
+    width: 560px; }
   .join .clause {
     height: 500px;
     width: 300px;
@@ -278,6 +335,12 @@ button {
     .join .clause li {
       overflow: hidden;
       text-align: left; }
+      .join .clause li h5 {
+        margin: 10px 0; }
+      .join .clause li p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
       .join .clause li span {
         text-align: right;
         float: right; }
@@ -291,7 +354,10 @@ button {
       margin: 10px 1px;
       border: none;
       padding: 4px 6px; }
-    .join form input[type="text"]:active, .join form input[type="text"]:focus, .join form textarea:active, .join form textarea:focus {
+    .join form input[type="text"]:active,
+    .join form input[type="text"]:focus,
+    .join form textarea:active,
+    .join form textarea:focus {
       background-color: #ededee; }
     .join form textarea {
       width: 630px;
@@ -312,18 +378,42 @@ button {
   background: #32353e;
   height: 300px;
   padding: 60px; }
-  .contact h1, .contact p {
+  .contact h1,
+  .contact p {
     color: #fff; }
+  .contact h1 {
+    margin-top: 20px;
+    font-size: 23px; }
+  .contact p {
+    margin: 10px auto 20px auto;
+    width: 750px; }
+  .contact input {
+    padding: 10px 20px;
+    width: 400px; }
+  .contact button {
+    padding: 12px 20px;
+    margin-left: -8px;
+    background: #686166;
+    color: #fff;
+    letter-spacing: 10px;
+    text-indent: 10px; }
+  .contact img {
+    margin: 20px 10px;
+    cursor: pointer; }
 
 .foot {
   background-color: #2f3038;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  height: 50px; }
   .foot p {
-    color: #fff; }
+    color: #fff;
+    line-height: 50px; }
   .foot .tip {
-    float: left; }
+    float: left;
+    margin-left: 100px; }
   .foot .back {
-    float: right; }
+    float: right;
+    margin-right: 100px; }
 
 /*# sourceMappingURL=style.css.map */
